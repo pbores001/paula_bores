@@ -1,0 +1,664 @@
+/* Custom Properties */
+ ::ng-deep :root{
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary:'Source Code Pro', monospace;
+
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-dark-2: #3b3b3b;
+    --clr-accent: #16e0bd;
+    --clr-1: #F4A460;
+    --clr-2: #f06359;
+    --clr-3: #9ACD32;
+    --clr-4: #70c4fc;
+    --clr-5: #b97add;
+    --clr-highlight: #c002da;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3-2: 1.8rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.2rem;
+    --fs-h5: 0.95rem;
+    --fs-body: 1rem;
+
+
+}
+
+@media (min-width: 800px){
+::ng-deep :root{
+    --fs-h1: 4.5 rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+     --fs-body: 1.125rem; 
+}
+} 
+
+
+/* General Styles */
+
+
+body{
+background: var(--clr-light);
+color: var(--clr-dark);
+margin: 0;
+font-family: var(--ff-primary);
+font-size: var(--fs-body);
+line-height: 1.6;
+
+
+background-color: lightblue;
+min-height: 100vh;
+} 
+
+
+h1{
+color: var(--clr-accent);
+font-size: var(--fs-h1);}
+
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+h1, h2, h3 {
+    line-height: 1.1;
+    margin: 0;
+} 
+/*............ LEFT SIDE ..............*/
+
+
+
+.imgBox img{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 200px;
+}
+
+.profile_text h2 img{
+width: 25%;
+}
+
+.profile_text span{
+    font-weight: bold;
+    font-size: var(--fs-h2);
+}
+
+.profile_text hr{
+    height: 2px;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+}
+
+body{
+    font-family: var(--ff-primary);
+}
+
+
+
+#resume-box{
+    margin: -60px auto;
+    position: relative;
+    color: var(--clr-dark);
+    background: white;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+} 
+
+.right_side{
+ padding: 25px;
+} 
+
+
+
+ .left_side{
+    background: var(--clr-accent);
+    padding: 40px;
+}
+.contact_info .linkedin:hover{
+    text-decoration: underline;
+}
+
+.contact_info h3{
+    text-transform: uppercase;
+    font-size: var(--fs-h3-2);
+    background-color: #63646463;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 0px;
+}
+
+.contact_info li {
+    padding: 5px 0;
+    transition: 0.5s;
+   }
+
+
+.contact_info li:hover{
+ letter-spacing: 0.03em;
+ border-radius: 5px;
+ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+ background: #68ffe6b0;
+ transition: 0.5s;
+}
+
+.left_side .profile_text, .left_side .contact_info, .left_side .education{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.left_side .percent{
+    display: block;
+    margin: 7px auto;
+    position: relative;
+    width: 50%;
+    height: 6px;
+    border-radius: 5px;
+    background: rgb(59, 59, 59);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+
+.languages .text{
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    font-size: var(--fs-h4);
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.languages li .percent::after{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    border-radius: 5px;
+    background: rgb(250, 255, 254);
+    background: rgb(59, 59, 59);
+}
+.languages li:hover .percent::after{
+    width: 80%;
+    background: rgb(250, 255, 254);
+    transition: 0.3s;
+
+}
+
+
+.languages ul li{
+    margin: 30px auto;
+}
+
+/* ENGLISH */
+.languages ul li:first-child .percent::after{
+    width: 0;
+    margin: 0px auto;
+    transition: 0.6s;
+}
+
+.languages ul li:first-child:hover .percent::after{
+    width: 75%;
+    transition: 0.3s;
+}
+
+/* BASQUE */
+.languages ul li:nth-child(2) .percent::after{
+    width: 0;
+    transition: 0.6s;
+}
+
+.languages ul li:nth-child(2):hover .percent::after{
+    width: 65%;
+    transition: 0.6s;
+}
+
+/* SPANISH */
+.languages ul li:last-child .percent::after{
+    width: 0;
+    transition: 0.6s;
+}
+
+.languages ul li:last-child:hover .percent::after{
+    width: 100%;
+transition: 0.6s;
+}
+
+
+/*............ RIGHT SIDE ..............*/
+.right_side{
+    background:white;
+}
+
+/* /CV Profile h2 Typewriter Animation*/
+
+.right_side .about h2{ 
+font-family: 'Nunito', sans-serif;
+position: relative;
+width: max-content;
+margin-bottom: 5px;
+}
+
+.right_side .about h2::before, .right_side .about h2::after{
+content:'';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+/* Animations for all the H2 */
+.right_side .about h2::before{
+background: white;
+animation: typewriter var(--typeWriterSpeed)  steps(6) 1s forwards;
+}
+
+.right_side .about h2::after{
+    background: black;
+    width: 0.04em;
+    animation: 
+        typewriter var(--typeWriterSpeed) steps(6) 1s forwards,
+        blink 500ms steps(6) infinite;
+}
+
+/*INTRO TYPEWRITER SPEED / DURATION ---0 */
+    .right_side .intro h2::before{
+
+        animation: typewriter 2s  steps(9) 0.5s forwards;
+}
+                
+    .right_side .intro h2::after{
+        
+        animation: 
+            typewriter 2s steps(9) 0.5s forwards,
+            blink 900ms steps(9) infinite;
+}
+
+
+/*EXPERIENCE TYPEWRITER SPEED / DURATION ---1 */
+    .right_side .experience h2::before{
+        animation: typewriter 2s  steps(11) 1.2s forwards;
+    }
+                
+    .right_side .experience h2::after{
+        animation: 
+            typewriter 2s steps(11) 1.2s forwards,
+            blink 900ms steps(11) infinite;
+    }
+
+    /*SKILLS TYPEWRITER SPEED / DURATION ---2 */
+    .right_side .skills h2::before{
+        animation: typewriter 2s  steps(7) 1.4s forwards;
+    }
+                
+    .right_side .skills h2::after{
+        animation: 
+            typewriter 2s steps(7) 1.4s forwards,
+            blink 900ms steps(7) infinite;
+    }
+
+
+/* TYPEWRITER ANIMATION END */
+.fa-laptop, .fa-code{
+    color: var(--clr-4);
+}
+.w-development h3{
+    font-weight: 500;
+}
+
+.right_side .skillset{
+    margin-top: -50px;
+}
+
+.wdev_menu{
+  margin-top: -20px;
+}
+
+.skillset_category{
+
+display: flex;
+flex-direction: column;
+font-size: var(--fs-h5);
+}
+
+.w-design, .audiovisuals{
+    height: 300px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+/*..CODESKILLS HOVER ANIMATION..*/
+
+.intro p {
+line-height: 2em;
+text-align: justify;
+}
+.codeSkills{
+    transition: color 0.3s ease,
+    letter-spacing 0.1s 0.04s ease,
+    font-weight 0.3s 0.05s ease,
+    background 0.08s ease;
+}
+
+.codeSkills:hover{
+    color: rgb(0, 115, 192);
+    font-weight: 600;
+    background: rgb(236, 235, 235);
+    padding: 5px;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease,
+                letter-spacing 0.5s 0.1s ease,
+                font-weight 0.05s 0.1s ease,
+                background 0.08s ease;
+}
+
+
+.CMSskills{
+    position: relative;
+    transition: 0.3s linear
+
+}
+
+.CMSskills:hover{
+    text-decoration: underline;
+    transition: 0.3s linear;
+}
+
+.CMSskills::before{
+
+    content:' <!--and many more to discover--> ';
+    padding: 1px 10px 1px 10px;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-align: center;
+    background: rgb(236, 235, 235);
+    color: rgb(0, 115, 192);
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    left: -100px;
+    top: 5px;
+    transform: translateY(0);
+    opacity: 0;
+    transition: opacity 0.3s linear,
+    transform 0.5s linear;
+    
+
+}
+
+.CMSskills:hover::before{
+/* transform: translateY(50px); */
+    /* top: 25px; */
+    opacity: 1;
+    transform: translateY(30px);
+    transition: opacity 0.4s linear,
+                transform 0.3s linear;
+
+
+}
+
+/*---EXPERIENCE---*/
+
+.experience .text{
+    text-align: justify;
+    margin-left: 10px;
+ }
+
+
+/*Animation Skillset Categories*/
+
+.skillset_category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -20px auto 10px;
+}
+
+.skillset_category a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px 2px;
+    border: 2px solid rgb(30, 184, 255);
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    -webkit-box-reflect:below 0px linear-gradient (transparent, #0002);
+    transition: 0s;
+}
+
+.skillset_category a:hover{
+    color: #000;
+}
+
+
+.skillset_category a span h4{
+    position: relative;
+    z-index: 100;
+    font-size: var(--fs-h3);
+}
+
+
+.skillset_category a:nth-child(2){
+    filter:  hue-rotate(80deg);
+}
+
+.skillset_category a::before{
+    content:' ';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: var(--clr-accent);
+    box-shadow: 5px -8px 0 var(--clr-accent),
+                5px  8px 0 var(--clr-accent);
+    transition: width 0.5s, left 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.skillset_category a:hover::before{
+    left: -2px;
+    height: 100%;
+    width: 60%;
+    background: var(--clr-accent);
+    box-shadow: 5px 0 0 var(--clr-accent),
+                5px 0 0 var(--clr-accent);
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+
+/*Button Right SIDE*/
+
+.field::after{
+    content:' ';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: var(--clr-accent);
+    box-shadow: -5px -8px 0 var(--clr-accent),
+                -5px  8px 0 var(--clr-accent);
+    transition: width 0.5s, right 0.5s, height 0.5s;
+    box-shadow: 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.field:hover::after{
+    right: -2px;
+    height: 100%;
+    width: 60%;
+    background: var(--clr-accent);
+    box-shadow: -5px 0 0 var(--clr-accent),
+                -5px 0 0 var(--clr-accent);
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.w-development span, .w-design span, .audiovisuals span{
+font-size: 1.2em;
+}
+
+.visualSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+    /*INTERESTS TYPEWRITER SPEED / DURATION ---3 */
+.right_side .interests h2::before{
+        animation: typewriter 2s  steps(10) 1.6s forwards;
+    }
+                
+.right_side .interests h2::after{
+        animation: 
+            typewriter 2s steps(10) 1.6s forwards,
+            blink 900ms steps(10) infinite;
+    }
+
+
+
+
+@keyframes typewriter{
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    to {
+        background: transparent;
+    }
+}
+
+
+
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--clr-dark-2);
+    font-weight: var(--fw-bold);
+}
+
+.wdev_menu{
+    display: flex;
+    justify-content: space-between;}
+
+.skillset{
+        padding-left: 0;
+    }
+
+.interests ul{
+    padding-left: 0;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+	align-items: center;
+}
+
+.interests li{
+padding: 0.3em;
+}
+
+.interests li span{
+font-size: var(--fs-h4);
+transition: 0.5s ease;
+}
+
+.interests li span:last-of-type:hover{
+    letter-spacing: 0.05em;
+    transition: 0.5s ease;
+    }
+    
+
+/*-------------------------------------------------------- SECOND SIZE ----------------------------------------------------*/
+@media (min-width:1000px){
+
+    
+ .resume-container{
+    position: relative; 
+    width: 100%;
+    max-width: 1400px;
+    min-height: 1000px;
+    background: white;
+    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+
+.left_side{
+    flex:  1 1 30%;
+    position: relative;
+    padding: 40px;
+} 
+
+.right_side{
+    flex:  1 1 70%;
+    position: relative;
+    padding: 40px;
+}
+
+
+
+.CMSskills::before{
+
+    width: max-content;
+    left:-70%;
+    top: 100%;
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+    transition: opacity 0.3s  linear,
+                transform 0.9s 0.1s linear;
+
+    display: inline-block;
+
+}
+
+.CMSskills:hover::before{
+
+    opacity: 1;
+    transform: translateX(180px) translateY(0px);
+    transform-origin: left;
+    transition: opacity 0.6s 0.6s linear,
+                transform 0.8s linear;
+
+
+}
+
+
+
+}

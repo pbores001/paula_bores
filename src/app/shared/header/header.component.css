@@ -1,0 +1,119 @@
+/* Custom Properties */
+::ng-deep :root{
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary:'Source Code Pro', monospace;
+
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-dark-2: #3b3b3b;
+    --clr-accent: #16e0bd;
+    --clr-1: #F4A460;
+    --clr-2: #f06359;
+    --clr-3: #9ACD32;
+    --clr-4: #70c4fc;
+    --clr-5: #b97add;
+    --clr-highlight: #c002da;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3-2: 1.8rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.2rem;
+    --fs-h5: 0.95rem;
+    --fs-body: 1rem;
+
+
+}
+
+@media (min-width: 800px){
+::ng-deep :root{
+    --fs-h1: 4.5 rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+     --fs-body: 1.125rem; 
+}
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+::after, ::before{
+    content:'';
+}
+
+
+.navbar{
+    min-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+} 
+
+.navbar-nav  li{
+    margin:  auto 15px;
+}
+
+.navbar-nav a{
+    transition: 0.3s ease-in;
+
+}
+
+
+ .navbar-nav li:hover a{
+    color: #f17f1c;;
+    transition: 0.3s ease-in;
+ }
+
+
+ .all-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} 
+
+.navbar{
+
+    position: relative;
+} 
+
+.navbar-brand{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+
+.navbar-toggler{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.navbar-collapse{
+    padding-top:50px;
+}
+
+
+@media(min-width:1000px){
+
+    .navbar-brand{
+        position: absolute;
+        top: 12px;
+        left: 20px;
+    }
+
+
+    .navbar-collapse{
+        padding-top:0px;
+        margin-left:200px;
+    }
+    
+}
+
+

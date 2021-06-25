@@ -1,0 +1,33 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* RESET */
+html {
+    scroll-behavior: smooth;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+::before,
+::after {
+    content: "";
+}
+
+
+
+/*--- COMMON ---*/
+
